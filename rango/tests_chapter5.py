@@ -231,7 +231,7 @@ class Chapter5PopulationScriptTests(TestCase):
     def test_counts(self):
         """
         Tests whether each category's likes and views values are the values that are stated in the book.
-        Pukes when a value doesn't match.
+        Pukes when a value doesn't match.assertQuerysetEqual
         """
         details = {'Python': {'views': 128, 'likes': 64},
                    'Django': {'views': 64, 'likes': 32},
